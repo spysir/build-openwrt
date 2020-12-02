@@ -127,7 +127,7 @@ jobs:
           /bin/bash "build/${{matrix.target}}/$DIY_P1_SH"
         fi
         if [ build/${{matrix.target}} != build/openwrt ]; then
-          git clone -b $REPO_BRANCH --single-branch https://github.com/weweyes/openwrt-package package/danshui
+          git clone -b $REPO_BRANCH --single-branch https://github.com/weweyes/openwrt-package-2 package/danshui
         fi
         ./scripts/feeds clean && ./scripts/feeds update -a && ./scripts/feeds install -a && ./scripts/feeds install -a
         if [ -f "build/${{matrix.target}}/$DIY_P2_SH" ]; then
