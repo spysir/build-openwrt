@@ -25,7 +25,7 @@ on:
         required: false
         default: 'release-actions'
 
-
+#开启SSH:在Run Workflow时把SSH connection to Actions的值改为SSH即可开启SSH链接,默认为关闭SSH
 #定时触发开始编译(开启定时编译请先确认SSH处在关闭状态,要不然SSH没人管,会卡SSH编译失败)
 #  schedule:
 #    - cron: 0 8 */5 * *
