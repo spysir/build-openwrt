@@ -128,6 +128,10 @@ jobs:
         fi
         if [ build/${{matrix.target}} != build/openwrt ]; then
           git clone -b $REPO_BRANCH --single-branch https://github.com/weweyes/openwrt-package package/danshui
+        
+        rm -rf package/danshui/luci-app-passwall
+        rm -rf package/danshui/luci-app-ssr-plus
+        
         fi
         ./scripts/feeds clean && ./scripts/feeds update -a && ./scripts/feeds install -a && ./scripts/feeds install -a
         if [ -f "build/${{matrix.target}}/$DIY_P2_SH" ]; then
