@@ -131,6 +131,9 @@ jobs:
         
         rm -rf package/danshui/luci-app-passwall
         rm -rf package/danshui/luci-app-ssr-plus
+        rm -rf package/danshui/luci-app-oaf
+        
+        
         
         fi
         ./scripts/feeds clean && ./scripts/feeds update -a && ./scripts/feeds install -a && ./scripts/feeds install -a
