@@ -15,9 +15,7 @@ sed -i "s/OpenWrt /XPK build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/
 sed -i 's/luci-theme-bootstrap/luci-theme-opentopd/g' feeds/luci/collections/luci/Makefile
 # 路由器登陆密码设置为空
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
-# 修改luci版本信息
-sed -i '/luciname/d' package/base-files/files/usr/lib/lua/luci/version.lua
-sed -i '/luciversion/d' package/base-files/files/usr/lib/lua/luci/version.lua
+
 
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
 sed -i 's/"BaiduPCS Web"/"百度网盘"/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
