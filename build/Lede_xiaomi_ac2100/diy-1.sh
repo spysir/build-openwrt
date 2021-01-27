@@ -10,3 +10,4 @@
 git clone https://github.com/weweyes/OpenAppFilter.git package/luci-app-oaf
 #git clone https://github.com/weweyes/luci-app-argon-config.git package/luci-app-argon-config
 #git clone -b 18.06 https://github.com/weweyes/luci-theme-argon.git package/luci-theme-argon
+svn co https://github.com/281677160/openwrt-package/trunk/luci-app-adguardhome package/luci-app-adguardhome
