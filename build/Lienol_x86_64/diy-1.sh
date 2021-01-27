@@ -9,3 +9,10 @@
 # 软件包地址：https://github.com/281677160/openwrt-package
 git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
+#git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
+#git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
+#git clone https://github.com/weweyes/OpenAppFilter.git package/luci-app-oaf
+#svn co https://github.com/weweyes/openwrt-package/trunk/luci-app-smartdns package/luci-app-smartdns
+#svn co https://github.com/weweyes/openwrt-package/trunk/luci-app-adguardhome package/luci-app-adguardhome
+#svn co https://github.com/weweyes/openwrt-package/trunk/luci-app-aliddns package/luci-app-aliddns
