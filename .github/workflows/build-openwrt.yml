@@ -109,8 +109,8 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
         if [ build/${{matrix.target}} != build/openwrt ]; then
-          rm -rf package/ctcgfw/luci-app-argon-config
           
+          rm -rf package/ctcgfw/luci-app-argon-config
           rm -rf package/ctcgfw/luci-theme-argonv3
           rm -rf package/lean/luci-app-netdata
           rm -rf package/lean/luci-theme-argon
@@ -131,7 +131,7 @@ jobs:
         
         
         
-        rm -rf package/danshui/luci-theme-argon
+        
         rm -rf package/danshui/luci-theme-atmaterial
         rm -rf package/danshui/luci-theme-edge
         rm -rf package/danshui/luci-theme-infinityfreedom
