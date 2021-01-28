@@ -129,8 +129,7 @@ jobs:
         if [ build/${{matrix.target}} != build/openwrt ]; then
           git clone -b $REPO_BRANCH --single-branch https://github.com/weweyes/openwrt-package package/danshui
         
-        rm -rf package/danshui/luci-app-passwall
-        rm -rf package/danshui/luci-app-ssr-plus
+        
         
         rm -rf package/danshui/luci-theme-argon
         rm -rf package/danshui/luci-theme-atmaterial
@@ -141,9 +140,7 @@ jobs:
         rm -rf package/danshui/luci-theme-rosy
         rm -rf package/danshui/luci-app-eqos
         rm -rf package/danshui/luci-app-control-weburl
-        rm -rf package/danshui/
-        rm -rf package/danshui/
-        rm -rf package/danshui/
+        
         
         
         fi
