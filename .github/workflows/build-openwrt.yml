@@ -110,7 +110,7 @@ jobs:
         cd openwrt
         if [ build/${{matrix.target}} != build/openwrt ]; then
           rm -rf package/ctcgfw/luci-app-argon-config
-          rm -rf package/lienol/luci-app-timecontrol
+          
           rm -rf package/ctcgfw/luci-theme-argonv3
           rm -rf package/lean/luci-app-netdata
           rm -rf package/lean/luci-theme-argon
@@ -131,7 +131,7 @@ jobs:
         
         rm -rf package/danshui/luci-app-passwall
         rm -rf package/danshui/luci-app-ssr-plus
-        rm -rf package/danshui/luci-app-oaf
+        
         rm -rf package/danshui/luci-theme-argon
         rm -rf package/danshui/luci-theme-atmaterial
         rm -rf package/danshui/luci-theme-edge
@@ -140,7 +140,10 @@ jobs:
         rm -rf package/danshui/luci-theme-opentopd
         rm -rf package/danshui/luci-theme-rosy
         rm -rf package/danshui/luci-app-eqos
-        
+        rm -rf package/danshui/luci-app-control-weburl
+        rm -rf package/danshui/
+        rm -rf package/danshui/
+        rm -rf package/danshui/
         
         
         fi
