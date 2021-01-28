@@ -7,9 +7,9 @@
 # 相同的文件都拉一起，因为有一些可能还是其他大神修改过的容易造成编译错误的
 # 想要什么插件就单独的拉取什么插件就好，或者告诉我，我把插件放我的插件包就行了
 # 软件包地址：https://github.com/281677160/openwrt-package
-git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
-git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
+#git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+#git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
+#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
 #git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
 #git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 #git clone https://github.com/weweyes/OpenAppFilter.git package/luci-app-oaf
