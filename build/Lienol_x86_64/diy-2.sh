@@ -3,21 +3,21 @@
 #
 
 # 修改openwrt登陆地址,把下面的192.168.8.5修改成你想要的就可以了
-sed -i 's/192.168.1.1/192.168.8.5/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.8.5/g' package/base-files/files/bin/config_generate
 
 # 修改主机名字，把OpenWrt修改你喜欢的就行（不能使用中文）
-sed -i '/uci commit system/i\uci set system.@system[0].hostname='OpenWrt'' package/default-settings/files/zzz-default-settings
+#sed -i '/uci commit system/i\uci set system.@system[0].hostname='OpenWrt'' package/default-settings/files/zzz-default-settings
 
 # 固件版本里面添加自己个性名称和编译日期（XPK build $(TZ=UTC-8 date "+%Y.%m.%d") @ 这些为后期增加）
-sed -i "s/OpenWrt /XPK build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/default-settings/files/zzz-default-settings
+#sed -i "s/OpenWrt /XPK build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/default-settings/files/zzz-default-settings
 
 # 修改 opentopd 为默认主题,可根据你喜欢的修改成其他的（不选择那些会自动改变为默认主题的主题才有效果）
-sed -i 's/luci-theme-bootstrap/luci-theme-opentopd/g' feeds/luci/collections/luci/Makefile
+#sed -i 's/luci-theme-bootstrap/luci-theme-opentopd/g' feeds/luci/collections/luci/Makefile
 
 # 修改内核版本
 #sed -i 's/KERNEL_PATCHVER:=4.14/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
 
-# 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
+# 修改插件中文翻译名称（修改名字后不知道会不会对插件功能有影响，自己多测试）
 sed -i 's/"BaiduPCS Web"/"百度网盘"/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
 sed -i 's/cbi("qbittorrent"),_("qBittorrent")/cbi("qbittorrent"),_("BT下载")/g' package/lean/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
 sed -i 's/"aMule设置"/"电驴下载"/g' package/lean/luci-app-amule/po/zh-cn/amule.po
