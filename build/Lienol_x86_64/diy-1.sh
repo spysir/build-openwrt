@@ -18,6 +18,4 @@
 #svn co https://github.com/weweyes/openwrt-packages/trunk/luci-app-aliddns package/luci-app-aliddns
 #git clone https://github.com/weweyes/luci-theme-opentopd.git package/luci-theme-opentopd
 
-git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
-git clone https://github.com/jerrykuku/luci-app-vssr package/luci-app-vssr
 git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
