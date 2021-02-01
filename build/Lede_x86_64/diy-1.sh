@@ -10,4 +10,5 @@
 #git clone https://github.com/weweyes/OpenAppFilter.git package/luci-app-oaf
 #svn co https://github.com/281677160/openwrt-package/trunk/luci-app-adguardhome package/luci-app-adguardhome
 
+git clone https://github.com/weweyes/luci-theme-opentopd.git package/luci-theme-opentopd
 git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
