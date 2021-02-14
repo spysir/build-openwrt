@@ -5,7 +5,7 @@
 # 修改openwrt登陆地址,把下面的192.168.8.5修改成你想要的就可以了
 sed -i 's/192.168.1.1/192.168.8.5/g' package/base-files/files/bin/config_generate
 
-# 修改主机名字，把OpenWrt修改你喜欢的就行（不能使用中文）
+# 修改主机名字，把XPK修改你喜欢的就行（不能使用中文）
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='XPK'' package/default-settings/files/zzz-default-settings
 
 # 固件版本里面添加自己个性名称和编译日期（XPK build $(TZ=UTC-8 date "+%Y.%m.%d") @ 这些为后期增加）
