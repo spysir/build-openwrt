@@ -144,6 +144,7 @@ jobs:
         rm -rf package/feeds/packages/xray-core
         rm -rf bin tmp
         
+        
         fi
         ./scripts/feeds clean && ./scripts/feeds update -a && ./scripts/feeds install -a && ./scripts/feeds install -a
         if [ -f "build/${{matrix.target}}/$DIY_P2_SH" ]; then
