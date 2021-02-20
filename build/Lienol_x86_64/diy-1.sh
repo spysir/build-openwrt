@@ -17,6 +17,6 @@
 #svn co https://github.com/weweyes/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
 #svn co https://github.com/weweyes/openwrt-packages/trunk/luci-app-aliddns package/luci-app-aliddns
 
-git clone https://github.com/weweyes/luci-theme-opentopd.git package/luci-theme-opentopd
+git clone https://github.com/weweyes/luci-theme-opentopd-backup package/luci-theme-opentopd
 git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
