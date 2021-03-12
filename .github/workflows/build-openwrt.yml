@@ -141,8 +141,7 @@ jobs:
         rm -rf package/danshui/luci-app-eqos
         rm -rf package/danshui/luci-app-control-weburl
         
-        # rm -rf package/feeds/packages/xray-core
-        # rm -rf bin tmp
+        
         
         
         fi
