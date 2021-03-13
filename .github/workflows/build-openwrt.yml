@@ -140,7 +140,7 @@ jobs:
         rm -rf package/danshui/luci-theme-rosy
         rm -rf package/danshui/luci-app-eqos
         rm -rf package/danshui/luci-app-control-weburl
-        
+        rm -rf package/danshui/luci-app-oaf
         
         
         
