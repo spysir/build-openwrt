@@ -9,7 +9,7 @@
 # 软件包地址：https://github.com/281677160/openwrt-package
 #git clone https://github.com/weweyes/OpenAppFilter.git package/luci-app-oaf
 
-git clone https://github.com/weweyes/luci-theme-opentopd.git package/luci-theme-opentopd
+git clone https://github.com/weweyes/luci-theme-opentopd-backup package/luci-theme-opentopd
 git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
 git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
