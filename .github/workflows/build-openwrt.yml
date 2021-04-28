@@ -137,7 +137,7 @@ jobs:
         rm -rf package/danshui/luci-theme-atmaterial
         rm -rf package/danshui/luci-theme-edge
         rm -rf package/danshui/luci-theme-infinityfreedom
-        
+        rm -rf package/danshui/luci-app-dnsfilter
         rm -rf package/danshui/luci-theme-opentopd
         rm -rf package/danshui/luci-theme-rosy
         rm -rf package/danshui/luci-app-eqos
