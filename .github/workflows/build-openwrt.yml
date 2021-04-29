@@ -133,7 +133,7 @@ jobs:
         
         
         
-        
+        rm -rf package/danshui/luci-app-jd-dailybonus
         rm -rf package/danshui/luci-theme-atmaterial
         rm -rf package/danshui/luci-theme-edge
         rm -rf package/danshui/luci-theme-infinityfreedom
