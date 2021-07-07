@@ -132,7 +132,7 @@ jobs:
           git clone -b $REPO_BRANCH --single-branch https://github.com/weweyes/openwrt-package package/danshui
         
         
-        rm -rf package/danshui/luci-app-netdata
+        
         rm -rf package/danshui/luci-app-jd-dailybonus
         rm -rf package/danshui/luci-theme-atmaterial
         rm -rf package/danshui/luci-theme-edge
