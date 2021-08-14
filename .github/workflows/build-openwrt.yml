@@ -143,7 +143,7 @@ jobs:
         rm -rf package/danshui/luci-app-eqos
         rm -rf package/danshui/luci-app-control-weburl
         rm -rf package/danshui/luci-app-oaf
-        
+        rm -rf package/danshui/luci-app-serverchan
         
         
         fi
