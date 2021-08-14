@@ -14,7 +14,7 @@
 #svn co https://github.com/281677160/openwrt-package/branches/19.07/luci-app-eqos package/luci-app-eqos
 #svn co https://github.com/281677160/openwrt-package/trunk/luci-app-adguardhome package/luci-app-adguardhome
 
-#git clone https://github.com/weweyes/luci-theme-opentopd-backup package/luci-theme-opentopd
+git clone https://github.com/weweyes/luci-theme-opentopd-backup package/luci-theme-opentopd
 git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
 git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
