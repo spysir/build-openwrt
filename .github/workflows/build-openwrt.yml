@@ -171,7 +171,7 @@ jobs:
         popd
  
     - name: SSH远程连接（运行到此必须刷新一次网页再等待代码展开,不能频繁刷新）
-      uses: garypang13/debugger-action@master
+      uses: weweyes/debugger-action@master
       if: env.SSH_ACTIONS == 'true' || (github.event.inputs.ssh == 'ssh' && github.event.inputs.ssh  != 'false')
 
     - name: 下载软件包
