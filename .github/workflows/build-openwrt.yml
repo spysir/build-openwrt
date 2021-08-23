@@ -61,7 +61,7 @@ jobs:
 
     steps:
     - name: 准备结束
-      uses: actions/checkout@main
+      uses: actions/checkout@v2
     
     - name: 检测脚本设置
       run: |
