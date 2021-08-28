@@ -17,6 +17,6 @@ git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
 
 git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
 git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
-git clone https://github.com/garypang13/luci-app-dnsfilter.git package/luci-app-dnsfilter
+#git clone https://github.com/garypang13/luci-app-dnsfilter.git package/luci-app-dnsfilter
 git clone https://github.com/weweyes/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
 git clone https://github.com/weweyes/luci-app-tcpdump.git package/luci-app-tcpdump
