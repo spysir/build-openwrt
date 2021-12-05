@@ -128,8 +128,8 @@ jobs:
           chmod +x build/${{matrix.target}}/$DIY_P1_SH
           /bin/bash "build/${{matrix.target}}/$DIY_P1_SH"
         fi
-        if [ build/${{matrix.target}} != build/openwrt ]; then
-          git clone -b $REPO_BRANCH --single-branch https://github.com/weweyes/openwrt-package package/danshui
+        #if [ build/${{matrix.target}} != build/openwrt ]; then
+          #git clone -b $REPO_BRANCH --single-branch https://github.com/weweyes/openwrt-package package/danshui
         
         
         
