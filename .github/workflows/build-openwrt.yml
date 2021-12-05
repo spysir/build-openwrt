@@ -128,22 +128,11 @@ jobs:
           chmod +x build/${{matrix.target}}/$DIY_P1_SH
           /bin/bash "build/${{matrix.target}}/$DIY_P1_SH"
         fi
-        #if [ build/${{matrix.target}} != build/openwrt ]; then
-          #git clone -b $REPO_BRANCH --single-branch https://github.com/weweyes/openwrt-package package/danshui
         
         
         
-        rm -rf package/danshui/luci-app-jd-dailybonus
-        rm -rf package/danshui/luci-theme-atmaterial
-        rm -rf package/danshui/luci-theme-edge
-        rm -rf package/danshui/luci-theme-infinityfreedom
-        rm -rf package/danshui/luci-app-dnsfilter
-        rm -rf package/danshui/luci-theme-opentopd
-        rm -rf package/danshui/luci-theme-rosy
-        rm -rf package/danshui/luci-app-eqos
-        rm -rf package/danshui/luci-app-control-weburl
-        rm -rf package/danshui/luci-app-oaf
-        rm -rf package/danshui/luci-app-serverchan
+        
+        
         
         
         fi
