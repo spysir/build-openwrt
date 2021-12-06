@@ -20,3 +20,4 @@ git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-push
 git clone https://github.com/spysir/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
 git clone https://github.com/spysir/luci-app-tcpdump.git package/luci-app-tcpdump
 git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
+git clone https://github.com/spysir/luci-app-poweroffdevice.git
