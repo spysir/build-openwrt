@@ -12,7 +12,6 @@
 
 git clone https://github.com/spysir/luci-theme-opentopd package/luci-theme-opentopd
 git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
-git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
 git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
 
 git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
@@ -21,3 +20,9 @@ git clone https://github.com/spysir/luci-app-jd-dailybonus.git package/luci-app-
 git clone https://github.com/spysir/luci-app-tcpdump.git package/luci-app-tcpdump
 git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
 git clone https://github.com/spysir/luci-app-poweroffdevice.git
+
+git clone https://github.com/spysir/helloworld
+git clone https://github.com/xiaorouji/openwrt-passwall.git;main
+git clone https://github.com/spysir/openwrt-package-lienol-old
+git clone https://github.com/spysir/openwrt-themes
+git clone https://github.com/spysir/luci-app-autotimeset.git
