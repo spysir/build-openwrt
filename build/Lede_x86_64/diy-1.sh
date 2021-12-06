@@ -20,9 +20,4 @@ git clone https://github.com/spysir/luci-app-jd-dailybonus.git package/luci-app-
 git clone https://github.com/spysir/luci-app-tcpdump.git package/luci-app-tcpdump
 git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
 git clone https://github.com/spysir/luci-app-poweroffdevice.git
-
-git clone https://github.com/spysir/helloworld
-git clone https://github.com/xiaorouji/openwrt-passwall.git;main
-git clone https://github.com/spysir/openwrt-package-lienol-old
-git clone https://github.com/spysir/openwrt-themes
 git clone https://github.com/spysir/luci-app-autotimeset.git
