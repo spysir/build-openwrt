@@ -19,3 +19,4 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-ser
 git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
 git clone https://github.com/spysir/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
 git clone https://github.com/spysir/luci-app-tcpdump.git package/luci-app-tcpdump
+git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
