@@ -77,7 +77,7 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-                 ${{matrix.target}}固件开始编译啦！
+                 ${{matrix.target}}准备开始编译啦！
        
     
     - name: 安装系统环境
@@ -154,6 +154,14 @@ jobs:
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
+    
+    - name: 电报推送
+      uses: spysir/telegram-action@master
+      with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+                 ${{matrix.target}}固件开始编译啦！
     
     - name: 开始编译
       id: compile
