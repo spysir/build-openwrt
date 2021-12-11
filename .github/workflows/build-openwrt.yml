@@ -80,7 +80,7 @@ jobs:
                  ${{matrix.target}}固件开始编译啦！
        
     
-    - name: 开始安装编译所需系统
+    - name: 安装系统环境
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
@@ -143,7 +143,7 @@ jobs:
         make && sudo make install
         popd
  
-    - name: SSH远程连接（如代码未展开请刷新）
+    - name: SSH连接（如代码未展开请刷新）
       uses: spysir/debugger-action@master
       if: env.SSH_ACTIONS == 'true' || (github.event.inputs.ssh == 'ssh' && github.event.inputs.ssh  != 'false')
 
@@ -155,7 +155,7 @@ jobs:
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
     
-    - name: 开始编译固件
+    - name: 开始编译
       id: compile
       run: |
         cd openwrt
@@ -166,14 +166,14 @@ jobs:
         echo "date1=$(date "+%Y年%m月%d号-%H点%M分")" >> $GITHUB_ENV
         echo "date2=$(date "+%Y%m%d-%H%M")" >> $GITHUB_ENV
 
-    - name: 上传bin文件夹(固件+ipk)在github空间
+    - name: 上传bin文件夹(固件+ipk)到github空间
       uses: actions/upload-artifact@v2
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin_${{matrix.target}}_${{ env.date }}
         path: openwrt/bin
 
-    - name: 整理固件文件夹
+    - name: 整理固件
       id: organizer
       run: |
         mkdir config
@@ -194,14 +194,14 @@ jobs:
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
     
-    - name: 上传.config配置文件在github空间
+    - name: 上传.config配置文件到github空间
       uses: actions/upload-artifact@v2
       if: steps.organizer.outputs.status == 'success' && env.UPLOAD_CONFIG == 'true'
       with:
         name: .config_${{matrix.target}}_${{ env.date }}
         path: ./config
 
-    - name: 上传固件在github空间
+    - name: 上传固件到github空间
       uses: actions/upload-artifact@v2
       if: steps.organizer.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true'
       with:
