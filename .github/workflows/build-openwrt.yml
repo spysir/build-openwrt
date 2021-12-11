@@ -244,17 +244,16 @@ jobs:
         name: ${{ env.date1 }} 「 ${{ env.WXFB_MESSAGE }} 」固件
         tag_name: ${{ env.date2 }}
         body: |            
-            ☆  源码 : ${{ env.REPO_URL }}
-            ☆  分支 : ${{ env.REPO_BRANCH }}
-            ☆  感谢源码作者无私分享！
+            源码 : ${{ env.REPO_URL }}
+            分支 : ${{ env.REPO_BRANCH }}
             
-            🎉 [ ${{ env.WXFB_MESSAGE }} ]固件下载 ✨
+            [ ${{ env.WXFB_MESSAGE }} ]固件下载
             
-            💐 奶牛快传(国内高速🚀下载)： ${{ env.COWTRANSFER_URL }}
+            奶牛快传(国内下载)： ${{ env.COWTRANSFER_URL }}
             
-            ⛄ WeTransfer(国外高速🚀下载)： ${{ env.WETRANSFER_URL }}
+            WeTransfer(国外下载)： ${{ env.WETRANSFER_URL }}
             
-            🌴 链接有效期为7天，无需注册直接下载 🐤
+            链接有效期为7天，无需注册直接下载
         files: ${{ env.FIRMWARE }}/*
     
     
