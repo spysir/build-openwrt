@@ -94,7 +94,7 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            主人${{matrix.target}}编译开始啦
+                 ${{matrix.target}}编译开始啦
             
             
 
@@ -307,4 +307,4 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            主人${{matrix.target}}编译成功啦
+                 ${{matrix.target}}编译成功啦
