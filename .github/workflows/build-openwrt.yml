@@ -40,7 +40,7 @@ env:
   REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
   SCKEY: ${{ secrets.SCKEY }}
   TZ: Asia/Shanghai
-  GITHUB_RELEASE: https://github.com/weweyes/build-openwrt/releases
+  GITHUB_RELEASE: https://github.com/spysir/build-openwrt/releases
 
 jobs: 
   build:
@@ -94,7 +94,7 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-                 ${{matrix.target}}编译开始啦
+                 ${{matrix.target}}编译开始啦！
             
             
 
@@ -172,7 +172,7 @@ jobs:
         popd
  
     - name: SSH远程连接（运行到此必须刷新一次网页再等待代码展开,不能频繁刷新）
-      uses: weweyes/debugger-action@master
+      uses: spysir/debugger-action@master
       if: env.SSH_ACTIONS == 'true' || (github.event.inputs.ssh == 'ssh' && github.event.inputs.ssh  != 'false')
 
     - name: 下载软件包
@@ -307,4 +307,4 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-                 ${{matrix.target}}编译成功啦
+                 ${{matrix.target}}编译成功啦!✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️✔️
