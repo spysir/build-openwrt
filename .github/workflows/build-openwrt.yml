@@ -16,10 +16,7 @@ on:
         description: 'SSH远程'
         required: false
         default: 'ssh-actions'
-      wxtz:
-        description: '微信通知'
-        required: false
-        default: 'wxtz-actions'
+      
       release:
         description: '发布固件'
         required: false
@@ -80,13 +77,7 @@ jobs:
         echo "UPLOAD_RELEASE=${UPLOAD_RELEASE}" >> $GITHUB_ENV
         echo "SERVERCHAN_SCKEY=${SERVERCHAN_SCKEY}" >> $GITHUB_ENV
     
-    - name: 微信通知
-      uses: emon100/Action-Serverchan@v2
-      if: env.SERVERCHAN_SCKEY == 'true' || (github.event.inputs.wxtz == 'wxtz' && github.event.inputs.wxtz  != 'false')
-      with:
-        SCKEY: ${{ secrets.SCKEY }}
-        text: 主人${{matrix.target}}编译开始啦
-        desp: 主人您要编译的[${{ env.WXFB_MESSAGE }}]固件正在努力耕耘中,请耐心等待......
+    
     
     - name: 电报推送
       uses: spysir/telegram-action@master
@@ -278,28 +269,7 @@ jobs:
             🌴 链接有效期为7天，无需注册直接下载 🐤
         files: ${{ env.FIRMWARE }}/*
     
-    - name: 微信通知
-      uses: emon100/Action-Serverchan@v2
-      if: steps.organizer.outputs.status == 'success' && env.SERVERCHAN_SCKEY == 'true' || (github.event.inputs.wxtz == 'wxtz' && github.event.inputs.wxtz  != 'false')
-      with:
-        SCKEY: ${{ secrets.SCKEY }}
-        text: 恭喜主人${{matrix.target}}固件编译成功！
-        desp: 我亲爱的主人您要编译的${{ env.WXFB_MESSAGE }}固件成功编译完成了！
-              
-              
-              完成时间：${{ env.date1 }}
-              
-              
-              发布地址：${{ env.GITHUB_RELEASE }}
-              
-              
-              奶牛快传：${{ env.COWTRANSFER_URL }}
-              
-              
-              WeTransfer：${{ env.WETRANSFER_URL }}
-              
-              
-              祝小主人见人爱，花见花开，车见车载，天天好心情🎈！！！
+    
     - name: 电报推送
       uses: spysir/telegram-action@master
       if: steps.organizer.outputs.status == 'success'
