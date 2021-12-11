@@ -302,6 +302,7 @@ jobs:
               祝小主人见人爱，花见花开，车见车载，天天好心情🎈！！！
     - name: 电报推送
       uses: spysir/telegram-action@master
+      if: steps.organizer.outputs.status == 'success'
       with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
