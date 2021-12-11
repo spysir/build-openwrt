@@ -88,7 +88,15 @@ jobs:
         text: 主人${{matrix.target}}编译开始啦
         desp: 主人您要编译的[${{ env.WXFB_MESSAGE }}]固件正在努力耕耘中,请耐心等待......
     
-    
+    - name: send telegram message on push
+      uses: spysir/telegram-action@master
+      with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            主人${{matrix.target}}编译开始啦
+            
+            
 
       
     
