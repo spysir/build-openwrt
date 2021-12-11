@@ -33,7 +33,7 @@ env:
   REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
   SCKEY: ${{ secrets.SCKEY }}
   TZ: Asia/Shanghai
-  GITHUB_RELEASE: https://github.com/spysir/build-openwrt/releases
+  
 
 jobs: 
   build:
