@@ -81,11 +81,8 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-                 ${{matrix.target}}编译开始啦！
-            
-            
-
-      
+                 ${{matrix.target}}固件开始编译啦！
+       
     
     - name: 开始安装编译所需系统
       env:
