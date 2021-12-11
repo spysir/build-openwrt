@@ -15,7 +15,7 @@ on:
       ssh:
         description: 'SSH连接'
         required: false
-        default: 'ssh-actions'
+        default: 'ssh-off'
       
 
 #开启SSH:在Run Workflow时把SSH connection to Actions的值改为SSH即可开启SSH链接,默认为关闭SSH
