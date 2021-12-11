@@ -89,9 +89,10 @@ jobs:
         desp: 主人您要编译的[${{ env.WXFB_MESSAGE }}]固件正在努力耕耘中,请耐心等待......
     
     - name: 电报通知
-      uses: spysir/tgpush@main
-      with:
-        TEXT: 主人${{matrix.target}}编译开始啦
+      
+        sudo https://api.telegram.org/bot${TG_TOKEN}/sendMessage?chat_id=${TG_CHAT_ID}&text=${主人${{matrix.target}}编译开始啦}
+
+      
     
     
     - name: 开始安装编译所需系统
