@@ -128,7 +128,7 @@ jobs:
         make && sudo make install
         popd
  
-    - name: SSH连接（如代码未展开请刷新）
+    - name: SSH连接（如未展开请刷新）
       uses: spysir/debugger-action@master
       if: env.SSH_ACTIONS == 'true' || (github.event.inputs.ssh == 'ssh' && github.event.inputs.ssh  != 'false')
 
