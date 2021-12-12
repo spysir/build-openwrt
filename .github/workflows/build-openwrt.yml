@@ -68,7 +68,7 @@ jobs:
       with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: 准备开始编译
+          message: ${{matrix.target}}准备开始编译啦！
           photo: tests/github-logo.png
           document: tests/gophercolor.png
     
