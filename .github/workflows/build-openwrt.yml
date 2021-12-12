@@ -63,17 +63,7 @@ jobs:
         echo "UPLOAD_RELEASE=${UPLOAD_RELEASE}" >> $GITHUB_ENV
         echo "SERVERCHAN_SCKEY=${SERVERCHAN_SCKEY}" >> $GITHUB_ENV
     
-    - name: 电报推送
-      uses: spysir/telegram-action@master
-      with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: |
-                 ${{matrix.target}}准备开始编译啦！
-                 ${{matrix.target}}准备开始编译啦！
-                 ${{matrix.target}}准备开始编译啦！
-                 ${{matrix.target}}准备开始编译啦！
-          
+    
     
     - name: 安装编译环境
       env:
@@ -218,4 +208,9 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-                 ${{matrix.target}}固件编译成功啦! (*^_^*)(*^_^*)(*^_^*)(*^_^*)(*^_^*)(*^_^*)(*^_^*)(*^_^*)(*^_^*)(*^_^*)(*^_^*)
+                 ${{matrix.target}}固件编译成功啦!
+                 ${{matrix.target}}固件编译成功啦!
+                 ${{matrix.target}}固件编译成功啦!
+                 ${{matrix.target}}固件编译成功啦!
+                 ${{matrix.target}}固件编译成功啦!
+                 ${{matrix.target}}固件编译成功啦!
