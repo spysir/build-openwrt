@@ -63,7 +63,14 @@ jobs:
         echo "UPLOAD_RELEASE=${UPLOAD_RELEASE}" >> $GITHUB_ENV
         echo "SERVERCHAN_SCKEY=${SERVERCHAN_SCKEY}" >> $GITHUB_ENV
     
-    
+    - name: 电报推送
+      uses: spysir/telegram-action@master
+      with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: 准备开始编译
+          photo: tests/github-logo.png
+          document: tests/gophercolor.png
     
     - name: 安装编译环境
       env:
