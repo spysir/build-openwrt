@@ -146,7 +146,7 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-                 Github Actions
+                 [Github Actions]
                  
                  ${{matrix.target}} 固件开始编译啦！
     
@@ -210,7 +210,7 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-                 Github Actions
+                 [Github Actions]
                  
                  ${{matrix.target}} 固件编译成功啦!
                  
