@@ -5,11 +5,7 @@ name: 编译OpenWrt固件
 
 on:
   workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH连接'
-        required: false
-        default: 'ssh-off'
+    
       
 
 #开启SSH:在Run Workflow时把SSH connection to Actions的值改为SSH即可开启SSH链接,默认为关闭SSH
