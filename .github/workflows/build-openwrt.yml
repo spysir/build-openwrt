@@ -208,7 +208,7 @@ jobs:
           message: |
                  [Github Actions]
                  
-                 ${{matrix.target}} 固件编译成功啦!
+                 --------------------------------
                  
                  ${{matrix.target}} 固件编译成功啦!
                  
