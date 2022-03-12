@@ -1,8 +1,8 @@
 
 # support
 - X86-64
-- xiaomi-AC2100 
-- redmi-AC2100
+- Xiaomi-AC2100 
+- Redmi-AC2100
 
 
 
