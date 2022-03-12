@@ -1,6 +1,8 @@
 
-# 编译说明
-支持X64 小米AC2100 红米AC2100
+# support
+- X86-64
+- xiaomi-AC2100 
+- redmi-AC2100
 
 
 
