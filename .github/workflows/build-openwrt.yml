@@ -136,7 +136,7 @@ jobs:
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
     
-    - name: 电报推送
+    - name: Telegram push
       uses: spysir/telegram-action@master
       with:
           to: ${{ secrets.TELEGRAM_TO }}
@@ -146,7 +146,7 @@ jobs:
                  
                  ${{matrix.target}} 固件开始编译啦！
     
-    - name: Gotify
+    - name: Gotify push
       uses: spysir/gotify-action@master
       with:
         gotify_api_base: '${{ secrets.GOTIFY_API_BASE }}'
@@ -209,7 +209,7 @@ jobs:
         name: OpenWrt_firmware_${{matrix.target}}_${{ env.date }}
         path: ${{ env.FIRMWARE }}
 
-    - name: 电报推送
+    - name: Telegram push
       uses: spysir/telegram-action@master
       if: steps.organizer.outputs.status == 'success'
       with:
@@ -223,3 +223,12 @@ jobs:
                  ${{matrix.target}} 固件编译成功啦!
                  
                  固件下载 https://github.com/spysir/build-openwrt/actions
+    
+    - name: Gotify push
+      uses: spysir/gotify-action@master
+      if: steps.organizer.outputs.status == 'success'
+      with:
+        gotify_api_base: '${{ secrets.GOTIFY_API_BASE }}'
+        gotify_app_token: '${{ secrets.GOTIFY_APP_TOKEN }}'
+        notification_title: 'Github Actions'
+        notification_message: '${{matrix.target}} 固件编译成功啦!'
