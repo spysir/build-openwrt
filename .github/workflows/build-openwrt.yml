@@ -146,6 +146,16 @@ jobs:
                  
                  ${{matrix.target}} 固件开始编译啦！
     
+    - name: Gotify Notification
+      uses: spysir/gotify-action@master
+      with:
+        gotify_api_base: '${{ secrets.GOTIFY_API_BASE }}'
+        gotify_app_token: '${{ secrets.GOTIFY_APP_TOKEN }}'
+        notification_title: 'Github Actions'
+        notification_message: '${{matrix.target}} 固件开始编译啦!'
+    
+    
+    
     - name: 开始编译
       id: compile
       run: |
