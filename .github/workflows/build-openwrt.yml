@@ -146,7 +146,7 @@ jobs:
                  
                  ${{matrix.target}} 固件开始编译啦！
     
-    - name: Gotify Notification
+    - name: Gotify
       uses: spysir/gotify-action@master
       with:
         gotify_api_base: '${{ secrets.GOTIFY_API_BASE }}'
