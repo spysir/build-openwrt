@@ -144,7 +144,7 @@ jobs:
           message: |
                  [Github Actions]
                  
-                 ${{matrix.target}} 固件开始编译啦！
+                 ${{matrix.target}} 固件开始...
     
     - name: Gotify push
       uses: spysir/gotify-action@master
@@ -152,7 +152,7 @@ jobs:
         gotify_api_base: '${{ secrets.GOTIFY_API_BASE }}'
         gotify_app_token: '${{ secrets.GOTIFY_APP_TOKEN }}'
         notification_title: 'Github Actions'
-        notification_message: '${{matrix.target}} 固件开始编译啦!'
+        notification_message: '${{matrix.target}} 固件开始...'
     
     
     
