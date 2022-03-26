@@ -1,5 +1,6 @@
-# https://github.com/P3TERX/Actions-OpenWrt.git
-
+# Copyright https://github.com/spysir/build-openwrt
+# Licensed to the public under the MIT License
+# -------------------------------------------------
 
 name: 编译OpenWrt固件
 
