@@ -231,4 +231,6 @@ jobs:
         gotify_api_base: '${{ secrets.GOTIFY_API_BASE }}'
         gotify_app_token: '${{ secrets.GOTIFY_APP_TOKEN }}'
         notification_title: 'Github Actions'
-        notification_message: '${{matrix.target}} 固件编译成功啦!'
+        notification_message: |
+                            ${{matrix.target}} 固件编译成功啦!
+                            固件下载 https://github.com/spysir/build-openwrt/actions
