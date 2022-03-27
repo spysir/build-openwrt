@@ -83,7 +83,7 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
         if [ build/${{matrix.target}} != build/openwrt ]; then
-          rm -rf package/lean/luci-app-netdata
+          rm -rf package/feeds/luci/applications/luci-app-netdata
           
           rm -rf package/diy/OpenAppFilter
         
