@@ -219,11 +219,11 @@ jobs:
           message: |
                  [Github Actions]
                  
-                 --------------------------------
-                 
                  ${{matrix.target}} 固件编译成功啦!
                  
                  固件下载 https://github.com/spysir/build-openwrt/actions
+                 
+                 
     
     - name: Gotify push
       uses: spysir/gotify-action@master
