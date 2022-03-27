@@ -35,8 +35,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [Lede_x86_64]
-     # 选择要编译的固件[Lienol_x86_64,Lede_x86_64,Lede_redmi_ac2100,Lede_xiaomi_ac2100]
+        target: [lede_x86_64]
+     # 选择要编译的固件[lienol_x86_64,lede_x86_64,lede_redmi_ac2100,lede_xiaomi_ac2100,immortalwrt]
     
 
     steps:
