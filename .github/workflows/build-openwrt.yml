@@ -11,7 +11,7 @@ on:
         description: 'SSH连接'
         required: false
         default: 'ssh-off'
-      
+#在Actions云编译中把ssh-off改成ssh开启SSH连接    
 
 
 #设置定时自动编译(SSH需要关闭）
