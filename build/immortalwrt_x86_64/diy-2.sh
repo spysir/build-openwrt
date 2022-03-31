@@ -22,3 +22,10 @@ sed -i "s/ImmortalWrt /XPK $(TZ=UTC-8 date "+%Y.%m.%d") /g" package/emortal/defa
 #sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
 #sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=4.19/g' target/linux/x86/Makefile
 
+# 整理固件包时候,删除您不想要的固件或者文件,让它不上传到Actions空间
+cat >${GITHUB_WORKSPACE}/Clear <<-EOF
+rm -rf *x86-64-generic-ext4-combined.img*
+rm -rf *x86-64-generic-ext4-combined-efi.img*
+rm -rf *x86-64-generic-ext4-rootfs.img*
+rm -rf *x86-64-generic-rootfs.tar*
+EOF
