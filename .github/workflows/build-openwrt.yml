@@ -6,7 +6,11 @@ name: 编译OpenWrt固件
 
 on:
   workflow_dispatch:
-    
+    inputs:
+      ssh:
+        description: 'SSH连接'
+        required: false
+        default: 'ssh-off'
       
 
 
