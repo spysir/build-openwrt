@@ -156,10 +156,8 @@ jobs:
         gotify_api_base: '${{ secrets.GOTIFY_API_BASE }}'
         gotify_app_token: '${{ secrets.GOTIFY_APP_TOKEN }}'
         notification_title: 'Github Actions'
-        #notification_message: '${{matrix.target}} 固件开始编译'
-        notification_message: |
-                            ${{matrix.target}} 固件开始编译
-                            ![](https://raw.githubusercontent.com/spysir/img/main/ok.png)
+        notification_message: '${{matrix.target}} 固件开始编译'
+                      
     
     - name: 开始编译
       id: compile
