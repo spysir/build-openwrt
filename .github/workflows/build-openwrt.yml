@@ -159,7 +159,7 @@ jobs:
         #notification_message: '${{matrix.target}} 固件开始编译'
         notification_message: |
                             ${{matrix.target}} 固件开始编译
-                            ![](https://raw.githubusercontent.com/spysir/img/main/ok.png
+                            ![](https://raw.githubusercontent.com/spysir/img/main/ok.png)
     
     - name: 开始编译
       id: compile
