@@ -224,7 +224,7 @@ jobs:
                  
                  ${{matrix.target}} 固件编译成功啦!
                  
-                 固件下载 https://github.com/spysir/build-openwrt/actions
+                 https://github.com/spysir/build-openwrt/actions
                  
                  
     
@@ -237,4 +237,4 @@ jobs:
         notification_title: 'Github Actions'
         notification_message: |
                             ${{matrix.target}} 固件编译成功啦!
-                            固件下载 https://github.com/spysir/build-openwrt/actions
+                            https://github.com/spysir/build-openwrt/actions
