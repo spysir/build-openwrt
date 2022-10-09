@@ -213,6 +213,16 @@ jobs:
         name: OpenWrt_firmware_${{matrix.target}}_${{ env.date }}
         path: ${{ env.FIRMWARE }}
 
+    - name: 上传固件到「WeTransfer」
+      continue-on-error: true
+      if: steps.organizer.outputs.status == 'success' && env.UPLOAD_WETRANSFER == 'true'
+      run: |
+        curl -fsSL git.io/file-transfer | sh
+        ./transfer wet -s -p 16 --no-progress ${FIRMWARE} 2>&1 | tee wetransfer.log
+        echo "##### WETRANSFER：$(cat wetransfer.log | grep https | cut -f3 -d" ")" >> update_log.txt
+        sed -i "s/Download Link/WETRANSFER/g" wetransfer.log
+        echo "::warning file=wetransfer.com::$(cat wetransfer.log | grep https)"
+    
     - name: Telegram push
       uses: spysir/telegram-action@master
       if: steps.organizer.outputs.status == 'success'
