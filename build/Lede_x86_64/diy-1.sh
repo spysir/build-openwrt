@@ -15,7 +15,7 @@ git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
 git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
 
 git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
-git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
+git clone https://github.com/MasterOfStar/luci-app-pushbot package/luci-app-pushbot
 
 git clone https://github.com/spysir/luci-app-tcpdump.git package/luci-app-tcpdump
 #git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
