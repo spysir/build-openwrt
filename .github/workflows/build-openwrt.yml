@@ -206,14 +206,14 @@ jobs:
         name: .config_${{matrix.target}}_${{ env.date }}
         path: ./config
 
-    - name: 上传固件
+    - name: 上传固件到github actions
       uses: actions/upload-artifact@v2
       if: steps.organizer.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true'
       with:
         name: OpenWrt_firmware_${{matrix.target}}_${{ env.date }}
         path: ${{ env.FIRMWARE }}
 
-    - name: 上传固件到「WeTransfer」
+    - name: 上传固件到WeTransfer
       continue-on-error: true
       if: steps.organizer.outputs.status == 'success' && env.UPLOAD_WETRANSFER == 'true'
       run: |
